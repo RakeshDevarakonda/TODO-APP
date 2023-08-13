@@ -26,6 +26,7 @@ h2 {
 #input-container {
   display: flex;
   margin: 50px;
+  margin-bottom: 20px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 50px;
   
@@ -37,6 +38,9 @@ h2 {
   border-radius: 50px;
   border: none;
   outline: none;
+  font-size: 15px;
+
+
 }
 #addbutton {
   padding: 10px 20px;
@@ -64,9 +68,12 @@ h2 {
 .spantag {
   flex: 1;
   padding: 8px;
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 .main{
 
