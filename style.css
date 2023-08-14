@@ -1,92 +1,133 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  #totaldiv {
+    max-width: 90%;
+  }
+  .spantag{
+    margin: 0px 5px !important;
+    margin-left: 0px !important;
+  }
+  #input-container {
+    margin: 20px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .totallistitem{
+    margin: 20px 10px 20px 10px  !important;
+    border-radius: 0px !important;
+  }
+  i{
+    margin: 5px !important;
+  }
 }
 
 body {
-  width: 100vw;
   display: flex;
   justify-content: center;
+  background: linear-gradient(to right, rgb(99, 62, 62), rgb(54, 54, 106));
 }
 
 #totaldiv {
   margin-top: 50px;
   box-shadow: 0px 0px 10px 0px black;
   width: 500px;
+  border-radius: 20px;
+  background-color: white;
 }
 
+
+
 h2 {
+  flex: 1;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 10px;
+  margin-top: 30px;
 
   text-align: center;
 }
 
+
+
 #input-container {
   display: flex;
-  margin: 50px;
-  margin-bottom: 20px;
+  margin: 50px 20px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 50px;
-  
+  width: 90%;
 }
 #taskbox {
   flex: 1;
   padding: 10px;
-  margin: 5px 5px 5px 0px;
+  margin: 5px 5px 5px 5px;
   border-radius: 50px;
   border: none;
   outline: none;
   font-size: 15px;
-
-
 }
 #addbutton {
+  width: 20%;
+
   padding: 10px 20px;
   border-radius: 50px;
   border: none;
   background-color: orange;
+  user-select: none;
 }
 
+
+
 .totallistitem {
-  margin: 20px 50px;
+  margin: 30px 30px;
   display: flex;
   align-items: center;
   box-shadow: 0px 0px 5px 0px rgb(97, 96, 96);
   border-radius: 50px;
+  align-items: center;
+  overflow: hidden;
+  word-break: break-all;
 }
 
-#checkboxtype {
-  margin-right: 18px;
-  margin-left: 18px;
-  height: 40px;
+.checkbox {
+  margin-right: 1px;
+  margin-left: 15px;
+  height: 15px;
   width: 20px;
   border-radius: 100%;
 }
 
 .spantag {
   flex: 1;
-  padding: 8px;
+  padding: 15px;
   font-size: 15px;
-  margin-left: 10px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-left: 20px;
+  outline: none;
 }
 
-
-.main{
-
+.main {
   display: flex;
   cursor: pointer;
+  background-color: transparent;
 }
 
+input[type="checkbox"]{
+  cursor: pointer;
+  accent-color: rgb(255, 255, 255);
 
+}
+
+.completed{
+  text-decoration: line-through;
+  color: green;
+}
 
 i {
- 
   padding: 5px;
   margin: 0px 5px;
+  margin-right: 20px;
 }
 
 i:hover {
@@ -94,7 +135,4 @@ i:hover {
   border-radius: 50%;
 }
 
-.checked{
-text-decoration: line-through;
-  
-}
+
