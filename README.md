@@ -1,4 +1,4 @@
-FOR LIVE DEMO CLICKHERE:- https://rakeshdevarakonda.github.io/TODO-APP/
+ <a href="https://rakeshdevarakonda.github.io/TODO-APP/">Live Demo</a>  
 
 
 # Simple To-Do List App
